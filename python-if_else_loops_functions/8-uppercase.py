@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-def uppercase(str):
+def to_uppercase(str):
     result = ''
     for char in str:
         if 'a' <= char <= 'z':
@@ -8,8 +8,8 @@ def uppercase(str):
             result += char
     print("{}".format(result))
 
-
+    
 if __name__ == '__main__':
-    uppercase = __import__('8-uppercase').uppercase
-    uppercase('holberton')
-    uppercase('Best School 98 Battery street')
+    to_uppercase = __import__('8-uppercase').to_uppercase
+    to_uppercase('best')
+    to_uppercase('Best School 98 Battery street')
