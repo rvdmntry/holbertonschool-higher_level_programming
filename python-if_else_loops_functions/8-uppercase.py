@@ -8,8 +8,8 @@ def to_uppercase(str):
             result += char
     print("{}".format(result))
 
-    
+
 if __name__ == '__main__':
     to_uppercase = __import__('8-uppercase').to_uppercase
-    to_uppercase('best')
+    to_uppercase('best      ')
     to_uppercase('Best School 98 Battery street')
