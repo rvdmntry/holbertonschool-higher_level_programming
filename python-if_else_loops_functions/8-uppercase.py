@@ -1,15 +1,10 @@
 #!/usr/bin/python3
-def to_uppercase(str):
-    result = ''
-    for char in str:
-        if 'a' <= char <= 'z':
-            result += chr(ord(char) - 32)
+def uppercase(str):
+    upstr = ""
+    for i in str:
+        if ord(i) >= ord('a') and ord(i) <= ord('z'):
+            upstr += chr(ord(i) - 32)
         else:
-            result += char
-    print("{}".format(result))
-
-
-if __name__ == '__main__':
-    to_uppercase = __import__('8-uppercase').to_uppercase
-    to_uppercase('best')
-    to_uppercase('Best School 98 Battery street')
+            upstr += i
+    print('{}'.format(upstr))
+    
