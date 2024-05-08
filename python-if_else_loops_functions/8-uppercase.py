@@ -10,6 +10,6 @@ def uppercase(str):
 
 
 if __name__ == '__main__':
-    uppercase = __import__('8-uppercase').uppercase
+    uppercase = __import__('8-uppercase').upper
     uppercase('best')
     uppercase('Best School 98 Battery street')
