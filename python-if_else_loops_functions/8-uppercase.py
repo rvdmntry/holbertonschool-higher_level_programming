@@ -6,7 +6,8 @@ def uppercase(str):
             result += chr(ord(char) - 32)
         else:
             result += char
-    print("{}".format(result))  # Use format here to print the result
+    print("{}".format(result))
+
 
 if __name__ == '__main__':
     uppercase = __import__('8-uppercase').uppercase
