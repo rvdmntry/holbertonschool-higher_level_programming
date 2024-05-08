@@ -5,6 +5,7 @@ def islower(c):
     # the character is between 97 ('a') and 122 ('z')
     return ord('a') <= ord(c) <= ord('z')
 
+
 if __name__ == "__main__":
     islower = __import__('7-islower').islower
 
