@@ -1,0 +1,14 @@
+#!/usr/bin/python3
+
+def pow(a, b):
+    return a ** b
+
+
+if __name__ == "__pow__":
+    pow = __import__('11-pow').pow
+
+    print(pow(2, 2)) chmod +x 11-pow.py
+    print(pow(98, 2))
+    print(pow(98, 0))
+    print(pow(100, -2))
+    print(pow(-4, 5))
