@@ -1,18 +1,16 @@
 #!/usr/bin/python3
 from calculator_1 import add, sub, mul, div
 
+def main(a, b):
+    # Calculate all operations
+    operations = [
+        f"{a} + {b} = {add(a, b)}",
+        f"{a} - {b} = {sub(a, b)}",
+        f"{a} * {b} = {mul(a, b)}",
+        f"{a} / {b} = {div(a, b)}" if b != 0 else f"{a} / {b} = Error"  # Handle division by zero
+    ]
+    # Use a single print function
+    print("\n".join(operations))
+
 if __name__ == "__main__":
-    a = 10
-    b = 5
-
-    # Perform all calculations first and store them in variables
-    result_add = add(a, b)
-    result_sub = sub(a, b)
-    result_mul = mul(a, b)
-    result_div = div(a, b)
-
-    # Print all results using a single print statement per operation
-    print(f"{a} + {b} = {result_add}")
-    print(f"{a} - {b} = {result_sub}")
-    print(f"{a} * {b} = {result_mul}")
-    print(f"{a} / {b} = {result_div}")
+    main(10, 5)
