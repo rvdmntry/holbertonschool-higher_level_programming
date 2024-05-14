@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 
-def multiply_by_2(a_dictionary):
-    # Create a new dictionary with values multiplied by 2
-    new_dict = {key: value * 2 for key, value in a_dictionary.items()}
-    return new_dict
+def simple_delete(a_dictionary, key=""):
+    # Check if the key exists in the dictionary
+    if key in a_dictionary:
+        # Delete the key-value pair from the dictionary
+        del a_dictionary[key]
+    return a_dictionary
