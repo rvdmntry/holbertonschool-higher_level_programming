@@ -18,9 +18,6 @@ The function prints text with 2 new lines after each of these characters: ., ?, 
 SUCCESS CASES
 ==============
 
-Category 1
-==========
-
 Test 1: Normal input.
 >>> text_indentation("A wizard is never late Frodo Baggins. Nor is he early? He arrives precisely when he means to.")
 A wizard is never late Frodo Baggins.
@@ -57,9 +54,6 @@ Hola?
 ==========================
 CASES THAT SHOULD NOT WORK
 ==========================
-
-Category 2
-==========
 
 Test 6: None.
 >>> text_indentation(None)
