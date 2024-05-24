@@ -2,7 +2,7 @@
 """
 1-rectangle.py
 
-This module defines a class Rectangle with private attributes
+This module defines a class Rectangle with private attributes 
 for width and height.
 """
 
