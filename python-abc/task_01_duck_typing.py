@@ -1,4 +1,3 @@
-# task_01_duck_typing.py
 from abc import ABC, abstractmethod
 import math
 
@@ -21,7 +20,7 @@ class Circle(Shape):
         return math.pi * self.radius ** 2
 
     def perimeter(self):
-        return 2 * math.pi * self.radius
+        return 2 * math.pi * abs(self.radius)
 
 
 class Rectangle(Shape):
@@ -37,6 +36,13 @@ class Rectangle(Shape):
 
 
 def shape_info(shape):
-    # Relying on duck typing here
     print(f"Area: {shape.area()}")
     print(f"Perimeter: {shape.perimeter()}")
+
+
+circle = Circle(5)
+rectangle = Rectangle(4, 7)
+
+shape_info(circle)
+print()
+shape_info(rectangle)
