@@ -1,3 +1,9 @@
+#!/usr/bin/python3
+"""
+This module defines a function to generate Pascal's triangle.
+"""
+
+
 def pascal_triangle(n):
     """
     Returns a list of lists of integers
