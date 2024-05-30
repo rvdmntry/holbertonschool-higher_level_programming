@@ -20,14 +20,13 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
             self.send_response(200)
             self.send_header("Content-type", "application/json")
             self.end_headers()
-            status = {"version": "1.0",
-                      "description": "A simple API built with http.server"}
+            status = {"status": "OK"}
             self.wfile.write(json.dumps(status).encode())
         else:
             self.send_response(404)
             self.send_header("Content-type", "application/json")
             self.end_headers()
-            error_message = {"error": "Endpoint not found"}
+            error_message = {"error": "Not found"}
             self.wfile.write(json.dumps(error_message).encode())
 
 
