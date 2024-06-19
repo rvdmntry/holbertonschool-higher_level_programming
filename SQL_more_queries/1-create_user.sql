@@ -1,4 +1,3 @@
-
 -- Create MySQL server user user_0d_1 with all privileges
 -- This script creates the user user_0d_1 with all privileges on the MySQL server and sets the password to user_0d_1_pwd.
 
