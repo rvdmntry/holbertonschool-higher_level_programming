@@ -13,8 +13,9 @@ This project contains SQL scripts for managing a MySQL database. The scripts inc
     $sudo apt update
     ```
 
-2. Install MySQL server:
-    ```sh
+  2. Install MySQL server:
+
+```sh
     $ sudo apt install mysql-server
     ```
 
