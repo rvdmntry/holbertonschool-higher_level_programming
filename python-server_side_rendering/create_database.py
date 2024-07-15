@@ -1,8 +1,16 @@
 import sqlite3
+import os
 
 
 def create_database():
-    conn = sqlite3.connect('products.db')
+    db_path = 'products.db'
+
+    # Remove existing database file if it exists
+    if os.path.exists(db_path):
+        os.remove(db_path)
+
+    # Create and populate the database
+    conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS Products (
